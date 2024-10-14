@@ -13,5 +13,7 @@ struct NoteAppApp: App {
         WindowGroup {
             ContentView()
         }
+        // Adding Data Model to the App
+        .modelContainer(for: [Note.self, NoteCategory.self])
     }
 }
